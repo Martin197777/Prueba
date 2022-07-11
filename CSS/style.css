@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Nobile&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+html{ 
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../fondo/fondo.jpg);
+	background-repeat: repeat; 
+}
+
+
+h1{	
+	color: rgb(79, 79, 79);
+	font-family: Kanit;
+	font-size: 6rem;
+	font-weight: 300;
+	text-decoration: underline;	
+}
+h2{
+	color: rgb(79, 79, 79);
+	font-family: Kanit;
+	font-size: 6rem;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+nav ul{
+	list-style: none;
+
+}
+
+
+p{
+	font-family: kanit;
+	font-size:  2rem;
+	line-height: 30px;
+}
+
+nav{
+	position: relative;
+	text-align: right;
+	width: 100%;
+	display: block;
+	background-color: rgba(79, 79, 79, .5);
+	padding: 10px 10px;
+
+}
+
+nav ul{
+	display: inline-block;
+}
+
+	nav ul li{
+		display: inline-block;
+		list-style: none;
+		margin-right: 10px;
+		padding-right: 10px;
+	}
+
+
+		nav ul li a{
+			display: inline-block;
+			margin-right: 15px;
+			color: floralwhite;
+			font-size: 2rem;
+			font-family: nobile;
+		}
+
+		nav ul li a:hover{
+			color: floralwhite;
+			font-size: 2rem;
+			font-family: nobile;
+			font-weight: 600;
+		}
+
+
+
+		ul li:hover ul {
+            display:block;
+            font-weight: 550;
+         }
+         ul ul {
+         position: absolute;
+         display: none;
+      }
+
+      ul ul li {
+          display: block;
+          text-align: left;
+
+         }
+
+      ul li:hover ul {
+            display:block;
+         }
+
+
+}
+
+.container{
+	padding: 10px;
+	border: solid 1px black;
+	background-color: rgba(0, 0, 0, 0.2);
+
+}	
+
+.galeria{
+	display: grid;
+	grid grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	grid-gap: 15px;
+}	
+
+.galeria__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.galeria__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+.galeria__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.galeria__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.galeria__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.galeria__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+.galeria__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.article__box--size{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 30%;
+	height: auto;
+	padding: 5px 10px;
+	margin: 5px auto;
+	border:solid 5px red;
+	font-family: nobile;
+}
+
+
+.encabezado__texto--ap{
+	background-color: black;
+	font-style: italic;
+	
+}
+
+.nav__fondo--color{
+	background-color: 0, 0, 0, 0.0;
+
+}
+
+
+.encabezado__fondo--color{
+	display: inline-block;
+	background-color:rgba(0, 0, 0, .1);
+	max-width: 100%;
+	height: auto;
+	padding: 5px 10px;
+	margin: 5px;
+	border:solid 3px black;
+	font-family: nobile;
+	color: white;
+
+
+}
+
+.encabezado__logo--pos{
+	width: auto;
+	height: auto;
+	object-position: left;
+	position: relative;
+	padding: 50px 10px;
+	
+}
+
+.main__img--size¨{
+	width: 100%;
+}
+
+.main__img--min{
+
+  border: 1px solid black;
+  padding: 5px;
+  width: 25%;
+  height: auto;
+}
+
+.encabezado__titulos--textcenter{
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.main__parrafo--italic{
+	font-style: italic;
+}
+
+.main__parrafo--fondo{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.main__noticias--fondo{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	text-align: center;
+
+}
+
+.pie__icono--p{
+	
+	width: 70px;
+}
+
+.header__img--size{
+	width: 100%;
+	height: auto;
+}
+
+.header__img--space{
+	padding: 10px;
+	margin: 10px;
+}
+
+.pie__msj--ap{
+	font-family: mansalva;
+	font-size: 4rem;
+	text-align: center;
+	padding: 10px 0;
+	color: white;
+
+}
+
+.main__articulo__dim{
+	height: auto;
+	width: 75%;
+	padding: 50px;
+	object-position: center;
+	margin: 50px auto;
+	border: solid 5px black;
+	overflow: auto;
+}
+
+
+#H2{
+	font-style: italic;
+}
+
+
+.pie__icon--sep{
+	padding: 10px 5px;
+	display: inline-block;
+}
+
+
+table{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 100px;
+	width: 80%;
+	height: 70px;
+	font-size: 20px;
+	font-family: nobile;
+	text-align: center;
+	color: white;
+}
+
+label{
+	display: inline;
+	padding 5px;
+	margin: 10px;
+	font-family: mansalva;
+	font-size: 15px;
+	color: white;
+
+}
+
+input{
+	display: inline;
+	font-family: mansalva;
+	font-size: 15px;
+	color: black;
+
+}
+
+fieldset{
+	display: block;
+	padding: 10px;
+    margin: 5px;
+	width: 40%;
+	font-family: nobile;
+	font-size: 15px;
+	color: white;
+}
+.main__form--ap{
+	display: block;
+	padding: 10px;
+	margin: 10px;
+
+}
+
+.main__iframe--pos{
+	padding: 20px;
+}
+
+.main__iframe--cont{
+	display: flex;
+    flex-flow: wrap;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+@keyframes animateDiv{
+	0%{background-color: yellow; width: 20px;}
+	25%{background-color: orange; width: 25px;}
+	50%{background-color: red; width: 75px;}
+	75%{background-color: violet; width: 50px;}
+	100%{background-color: deeppink; width: 25px;}
+
+}
+
+.animate{
+	animation-name: animateDiv;
+	animation animation-iteration-count: infinite;
+	animation animation-timing-function: linear;
+	animation animation-duration: 8s;
+
+}
